@@ -1,28 +1,33 @@
 
-def decode(eco):
-    dco = ""
-    c=0
-    while c < len(eco):
-        if eco[c] == "0":
-            dco += "7"
-        elif eco[c] == "1":
-            dco += "8"
-        elif eco[c] == "2":
-            dco += "9"
-        elif eco[c] == "3":
-            dco += "0"
-        elif eco[c] == "4":
-            dco += "1"
-        elif eco[c] == "5":
-            dco += "2"
-        elif eco[c] == "6":
-            dco += "3"
-        elif eco[c] == "7":
-            dco += "4"
-        elif eco[c] == "8":
-            dco += "5"
-        elif eco[c] == "9":
-            dco += "6"
-        c += 1
-    return dco
-
+def decode(password):
+     pass
+     # Declares decoded string
+     dco = ""
+     # Counter for while loop
+     c=0
+     # Loops through each digit in the password string
+     while c < len(eco):
+         # Each digit gets shifted down 3 based on starting digit
+         if password[c] == "0":
+             dco += "7"
+         elif password[c] == "1":
+             dco += "8"
+         elif password[c] == "2":
+             dco += "9"
+         elif password[c] == "3":
+             dco += "0"
+         elif password[c] == "4":
+             dco += "1"
+         elif password[c] == "5":
+             dco += "2"
+         elif password[c] == "6":
+             dco += "3"
+         elif password[c] == "7":
+             dco += "4"
+         elif password[c] == "8":
+             dco += "5"
+         elif password[c] == "9":
+             dco += "6"
+         c += 1
+     # Returns new decoded password
+     return dco
